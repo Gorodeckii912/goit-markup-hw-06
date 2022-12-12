@@ -485,16 +485,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
-          <svg width="11" height="11" class="">
-            <use href="./svg/icon2.svg#icon-Vector"></use>
+          <svg width="11" height="11" >
+            <use href="./svg/icon2.svg#icon-Vector" class="close-effect"></use>
           </svg>
         </button>
         <p class="modal-head">Залиште свої дані, ми вам передзвонимо</p>
 
-        <form action="" class="form-input">
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
+        <form action="">
+          <div class="modal-nav">
+            <div>
+              <label
+                ><span class="modal-nav-text"> Ім'я</span>
+                <input type="text" class="modal-input" name="name"
+              /></label>
+            </div>
+            <div>
+              <label
+                ><span class="modal-nav-text">Телефон</span>
+                <input type="tel" class="modal-input" name="tel"
+              /></label>
+            </div>
+            <div>
+              <label
+                ><span class="modal-nav-text">Пошта</span>
+                <input type="email" class="modal-input" name="email"
+              /></label>
+            </div>
+            <div>
+              <label for="comment" class="modal-nav-text">Коментар </label>
+              <textarea class="modal-input-text"
+                name="comment"
+                id="comment"
+                class="modal-input-text"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+          </div>
 
           <button type="submit" class="BTN-modal">Відправити</button>
         </form>

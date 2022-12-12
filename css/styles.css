@@ -71,7 +71,6 @@ img {
 .ulstyle {
   list-style: none;
   display: flex;
-  
 }
 
 /* Голова----------------- */
@@ -95,7 +94,6 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--link-active-color);
   padding: 24px 0 25px 0px;
-  
 }
 
 .logo2 {
@@ -111,19 +109,22 @@ header .container {
   display: flex;
   height: 80px;
 }
-.TextNAV::after{ position: absolute;
+.TextNAV::after {
+  position: absolute;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
-  background-color:var(--link-active-color);
+  background-color: var(--link-active-color);
 
   display: none;
 }
-.TextNAV:hover::after, .TextNAV:focus::after {display: block; }
-.TextNAV { 
-  
+.TextNAV:hover::after,
+.TextNAV:focus::after {
+  display: block;
+}
+.TextNAV {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -132,17 +133,25 @@ header .container {
   color: var(--head-nav-color);
   transition: var(--time-trans);
   transition-timing-function: var(--Cubik);
-  
 }
 .TextNAV:hover,
 .TextNAV:focus {
   color: var(--link-active-color);
 }
-.pod4ekivanie { padding-top: 32px;position: relative;}
-.pod4ekivanie:not(:last-child) { margin-right: 54px;}
-.pod4ekivanie:last-child { margin-right:280px;}
+.pod4ekivanie {
+  padding-top: 32px;
+  position: relative;
+}
+.pod4ekivanie:not(:last-child) {
+  margin-right: 54px;
+}
+.pod4ekivanie:last-child {
+  margin-right: 280px;
+}
 
-.otstup-top { padding-top: 32px;}
+.otstup-top {
+  padding-top: 32px;
+}
 .mit {
   text-decoration: none;
   font-family: "Roboto";
@@ -153,7 +162,6 @@ header .container {
   color: var(--head-mailtel-color);
   transition: var(--time-trans);
   transition-timing-function: var(--Cubik);
-
 }
 .mit:hover,
 .mit:focus {
@@ -328,59 +336,105 @@ header .container {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+  transition: var(--time-trans);
+  transition-timing-function: var(--Cubik);
 }
+
+.modal-close:hover, .modal-close:active { fill: #2196f3;}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
 }
 /* FORM and MODAL -------------------------------------- */
-.modal-head { 
-  font-family: 'Roboto';
+.modal-head {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  
+
   color: #212121;
-margin: 40px 40px 0 40px;}
+  margin: 40px 40px 0 40px;
+}
 
-.form-input { padding: 30px 40px; }
+.form-input {
+  padding: 0 30px;
+}
+.modal-nav {
+  padding: 12px 40px 20px 40px;
+}
+.modal-nav-text {
+  font-family: "Roboto";
+display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.18;
+  margin-bottom: 4px;
 
-.modal-input { 
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.modal-input:focus {border-color: #2196f3;}
+.modal-input:active {border-color: #2196f3;}
+.modal-input:hover {border-color: #2196f3;}
+
+.modal-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-left: 12px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
 }
+.modal-input-text {
+  width: 100%;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  max-width: 450px;
+  max-height: 200px;
+ 
+}
+.modal-input-text::placeholder-shown {  font-family: 'Roboto';
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  
+  color: rgba(117, 117, 117, 0.5);}
 
 .BTN-modal {
   width: 200px;
   height: 50px;
-  font-family: 'Roboto';
-  
+  font-family: "Roboto";
+  cursor: pointer;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  margin: 30px 124px 0 124px;
-  
-  
+  margin: 0 164px 0 164px;
+
   display: inline-block;
   align-items: center;
-  
+
   letter-spacing: 0.06em;
-  
-  color: #FFFFFF;
-  background: #2196F3;
-border-color: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;}
 
-
+  color: #ffffff;
+  background: #2196f3;
+  border-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
 /* Майн веб-------------hero-------------- */
 .main {
