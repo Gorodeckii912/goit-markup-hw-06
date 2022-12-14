@@ -367,6 +367,8 @@ header .container {
 .modal-nav {
   padding: 12px 40px 20px 40px;
 }
+
+.modal-input-grup { margin-bottom: 10px;}
 .modal-nav-text {
   font-family: "Roboto";
 display: block;
@@ -378,6 +380,7 @@ display: block;
   letter-spacing: 0.01em;
 
   color: #757575;
+  
 }
 .modal-input:focus {border-color: #2196f3;}
 .modal-input:active {border-color: #2196f3;}
@@ -386,11 +389,12 @@ display: block;
 .modal-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+  
   padding-left: 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 .modal-input-text {
   width: 100%;
@@ -412,6 +416,9 @@ display: block;
   letter-spacing: 0.01em;
   
   color: rgba(117, 117, 117, 0.5);}
+  .position-icon { position: relative;}
+  .icon-person1 { position: absolute;
+  left 0; }
 
 .BTN-modal {
   width: 200px;
