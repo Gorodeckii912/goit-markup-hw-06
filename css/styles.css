@@ -418,7 +418,9 @@ display: block;
   color: rgba(117, 117, 117, 0.5);}
   .position-icon { position: relative;}
   .icon-person1 { position: absolute;
-  left 0; }
+  top: 50%;
+left: 0px; 
+transform: translateY(-50%);}
 
 .BTN-modal {
   width: 200px;
