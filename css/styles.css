@@ -394,7 +394,7 @@ display: block;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
 }
 .modal-input-text {
   width: 100%;
@@ -417,6 +417,10 @@ display: block;
   
   color: rgba(117, 117, 117, 0.5);}
   .position-icon { position: relative;}
+
+  .modal-input ~ svg:hover { fill: #2196f3;}
+  .modal-input + svg:focus { fill: #2196f3;}
+
   .icon-person1 { position: absolute;
   top: 50%;
 left: 15px; 
