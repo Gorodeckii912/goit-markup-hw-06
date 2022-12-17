@@ -30,8 +30,8 @@
 
   /* time -cubik-background-----  ВРЕМЯ АНИМАЦИЙ---- */
   --Cubik: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-trans: 2500ms;
-  --background-time: background-color 2500ms;
+  --time-trans: 500ms;
+  --background-time: background-color 500ms;
 }
 
 /* основные настрйки */
@@ -483,7 +483,11 @@ background-size: contain;
   font-family: "Roboto";
   max-width: 450px;
   max-height: 200px;
+  outline: none;
+  transition: var(--time-trans);
+  transition-timing-function: var(--Cubik);
 }
+.modal-input-text:hover, .modal-input-text:focus, .modal-input-text:active { border-color: #2196f3;}
 .modal-input-text::placeholder-shown {
   font-family: "Roboto";
 
