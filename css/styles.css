@@ -218,6 +218,8 @@ header .container {
 }
 .unaited-h3 {
   font-family: "Roboto";
+  width: 100%;
+  height: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -226,6 +228,62 @@ header .container {
   color: #fff;
   margin-bottom: 20px;
 }
+.united2 {
+  width: 570px;
+  height: 86px;
+
+  margin-left: auto;
+  margin-top: 72px;
+}
+.unaited2-1 {
+  display: flex;
+  position: absolute;
+}
+.modal-input-2 {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.BTN-footer {
+  background-color: #2196f3;
+  
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-flex;
+
+  font-family: "Roboto";
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+ border-color: #2196f3;
+border-radius: 4px;
+}
+.BTN-footer::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+margin-left: 10px;
+
+background-image: url("../images2/icon\ send.svg");
+background-size: contain;
+
+}
+
 .footer-soc {
   margin: auto;
   display: flex;
@@ -384,8 +442,7 @@ header .container {
 
   letter-spacing: 0.01em;
 
-  color:
-  rgba(117, 117, 117, 1);
+  color: rgba(117, 117, 117, 1);
 }
 .modal-input:focus {
   border-color: #2196f3;
@@ -409,9 +466,8 @@ header .container {
   cursor: pointer;
   transition: var(--time-trans);
   transition-timing-function: var(--Cubik);
-  
 }
-.modal-input:hover +svg {
+.modal-input:hover + svg {
   fill: #2196f3;
 }
 .modal-input:focus + svg {
@@ -450,21 +506,28 @@ header .container {
   transition-timing-function: var(--Cubik);
 }
 
-.modal-comment-position { margin-bottom: 20px;}
-.position-chekbox {margin-left: 14px;}
-.color-politic{ color: #2196f3;}
+.modal-comment-position {
+  margin-bottom: 20px;
+}
+.position-chekbox {
+  margin-left: 14px;
+  cursor: pointer;
+}
+.color-politic {
+  color: #2196f3;
+}
 
-.ok-agry { font-family: 'Roboto';
-  
+.ok-agry {
+  font-family: "Roboto";
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  
-  
+
   letter-spacing: 0.03em;
-  
+
   color: #757575;
-  }
+}
 
 .BTN-modal {
   width: 200px;
